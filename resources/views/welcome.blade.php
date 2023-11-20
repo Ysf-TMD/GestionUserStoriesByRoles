@@ -7,6 +7,9 @@
                 <div class="col-md-3">
                     Liste Des Profiles
                 </div>
+                <div class="col-md-3">
+                    <a href="{{url("/tele")}}" target="_blank">Show details</a>
+                </div>
                 <div class="col-md text-end ">
                     Profiles :
                     ({{count($profiles)}})
