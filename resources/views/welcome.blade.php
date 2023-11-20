@@ -10,6 +10,9 @@
                 <div class="col-md-3">
                     <a href="{{url("/tele")}}" target="_blank">Show details</a>
                 </div>
+                <div class="col-md-3">
+                    <a href="{{route('allTables')}}" >Gestion des tables DB </a>
+                </div>
                 <div class="col-md text-end ">
                     Profiles :
                     ({{count($profiles)}})

@@ -41,9 +41,17 @@ Route::controller(\App\Http\Controllers\UserStorieController::class)->group(func
 });
 
 
+Route::controller(\App\Http\Controllers\TablesController::class)->group(function(){
+   Route::get("/allTables","allTables")->name("allTables");
+   Route::post("/addTable","addTable")->name("addTable");
+   Route::delete("/delTable/{table}","delTable")->name("delTable");
+});
 
-
-
+Route::controller(\App\Http\Controllers\AttributsController::class)->group(function(){
+    Route::get("/allAttributs/table/{table}","allAttributs")->name("allAttributs");
+    Route::post("/addAttribut/table/{table}","addAttribut")->name("addAttribut");
+    Route::delete("/deleteAttribut/{attribut}","deleteAttribut")->name("deleteAttribut");
+});
 
 
 
